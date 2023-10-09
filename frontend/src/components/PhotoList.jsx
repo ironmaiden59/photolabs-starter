@@ -20,6 +20,6 @@ const PhotoList = ({ photos, favoritedPhotos, updateToFavPhotoIds, openModal }) 
       ))}
     </ul>
   );
-};
+}; 
 
 export default PhotoList; 

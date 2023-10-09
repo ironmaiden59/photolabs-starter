@@ -18,12 +18,14 @@ const App = () => {
     fetchPhotosByTopic
   } = useApplicationData();
 
+
   return (
   <div className="App">
     {state.selectedPhoto && (
   <PhotoDetailsModal 
     photo={state.selectedPhoto} 
-    photos={state.photoData} 
+   openModal = {openModal}
+
     onClose={closeModal}
     favoritedPhotos={state.favoritedPhotos} 
     updateToFavPhotoIds={updateToFavPhotoIds}
@@ -34,7 +36,7 @@ const App = () => {
    photos={state.photoData}
    topics={state.topicData}
    favoritedPhotos={state.favoritedPhotos}
-   setFavoritedPhotos={updateToFavPhotoIds}
+   
    updateToFavPhotoIds={updateToFavPhotoIds}
    fetchPhotosByTopic={fetchPhotosByTopic}
 /> 
@@ -44,4 +46,4 @@ const App = () => {
   );
 };
 
-export default App; 
+export default App;  

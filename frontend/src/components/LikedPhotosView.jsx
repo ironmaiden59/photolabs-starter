@@ -19,4 +19,4 @@ const LikedPhotosView = ({ favoritedPhotos, photos }) => {
   );
 }
 
-export default LikedPhotosView;
+export default LikedPhotosView; 

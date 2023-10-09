@@ -1,17 +1,16 @@
 import React, { useCallback, useState } from 'react';
 
+
 import FavIcon from './FavIcon';
 
 import '../styles/PhotoFavButton.scss';
+
 
 function PhotoFavButton({ photoId, favoritedPhotos, updateToFavPhotoIds }) {
   
   const isActive = favoritedPhotos && favoritedPhotos.includes(photoId);
 
   const toggleFavoriteStatus = () => {
-    
-    
-    // The hook will handle whether to add or remove it from the favorites.
     updateToFavPhotoIds(photoId);
   };
 
@@ -22,6 +21,6 @@ function PhotoFavButton({ photoId, favoritedPhotos, updateToFavPhotoIds }) {
           </div>
       </div>
   );
-}
+} 
 
-export default PhotoFavButton; 
+export default PhotoFavButton;  
